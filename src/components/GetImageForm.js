@@ -5,7 +5,7 @@ import ImageDisplay from './ImageDisplay'
 import Loader from './Loader'
 
 const key = process.env.REACT_APP_MY_KEY
-console.log(key);
+
 class GetImageForm extends Component {
   constructor() {
     super()
