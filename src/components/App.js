@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../styles//App.css';
-
 import GetImageForm from './GetImageForm'
 import Header from './Header'
 

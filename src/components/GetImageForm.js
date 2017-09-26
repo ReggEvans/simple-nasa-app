@@ -4,8 +4,8 @@ import GetImageButton from './GetImageButton'
 import ImageDisplay from './ImageDisplay'
 import Loader from './Loader'
 
-const API_KEY = 'UZOqLbeVwUOSXh3GW6lKWwJpI5grah6CCRR6SiMZ'
-
+const key = process.env.REACT_APP_MY_KEY
+console.log(key);
 class GetImageForm extends Component {
   constructor() {
     super()
@@ -23,7 +23,7 @@ class GetImageForm extends Component {
     let rover = this.state.rover
     let camera = this.state.camera
     let sol = this.state.sol
-    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/${rover}/photos?sol=${sol}&camera=${camera}&api_key=${API_KEY}`
+    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/${rover}/photos?sol=${sol}&camera=${camera}&api_key=${key}`
     this.setState({
       loader: <Loader />,
       images:[],
