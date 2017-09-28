@@ -1,4 +1,4 @@
-# Mars Rover App
+# iRover App
 
 iRover is a fun, simple app built with ReactJS that pulls from the NASA API and returns images from the mars rover based on type, camera angle and solstice.
 
