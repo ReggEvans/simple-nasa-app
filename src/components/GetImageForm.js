@@ -28,7 +28,7 @@ class GetImageForm extends Component {
       loader: <Loader />,
       images:[],
       message: ''
-    })
+    }) 
     fetch(url)
     .then(response => response.json())
     .then(data => {
